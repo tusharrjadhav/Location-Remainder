@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
+{
+    IBOutlet UIButton *addUIButton;
+    IBOutlet UITextField *nameUITField;
+    IBOutlet UITextField *designationUITField;
+}
+
+- (IBAction)add:(id)sender;
 
 @end

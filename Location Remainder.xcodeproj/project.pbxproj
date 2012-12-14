@@ -18,6 +18,11 @@
 		510C9EC316771845001CC09B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 510C9EC216771845001CC09B /* Default-568h@2x.png */; };
 		510C9EC616771845001CC09B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C9EC516771845001CC09B /* ViewController.m */; };
 		510C9EC916771845001CC09B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 510C9EC716771845001CC09B /* ViewController.xib */; };
+		510C9ED216771C45001CC09B /* EmployeeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C9ED016771C45001CC09B /* EmployeeTableViewController.m */; };
+		510C9ED316771C45001CC09B /* EmployeeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 510C9ED116771C45001CC09B /* EmployeeTableViewController.xib */; };
+		510C9EDB167743D9001CC09B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 510C9EDA167743D9001CC09B /* libsqlite3.0.dylib */; };
+		510C9EDE16774B33001CC09B /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C9EDD16774B33001CC09B /* Employee.m */; };
+		51894EA0167A0BE000C6F51B /* demodata.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 51894E9F167A0BE000C6F51B /* demodata.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,13 @@
 		510C9EC416771845001CC09B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		510C9EC516771845001CC09B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		510C9EC816771845001CC09B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		510C9ECF16771C45001CC09B /* EmployeeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeTableViewController.h; sourceTree = "<group>"; };
+		510C9ED016771C45001CC09B /* EmployeeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeTableViewController.m; sourceTree = "<group>"; };
+		510C9ED116771C45001CC09B /* EmployeeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeeTableViewController.xib; sourceTree = "<group>"; };
+		510C9EDA167743D9001CC09B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		510C9EDC16774B33001CC09B /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		510C9EDD16774B33001CC09B /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		51894E9F167A0BE000C6F51B /* demodata.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = demodata.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510C9EDB167743D9001CC09B /* libsqlite3.0.dylib in Frameworks */,
 				510C9EAD16771845001CC09B /* UIKit.framework in Frameworks */,
 				510C9EAF16771845001CC09B /* Foundation.framework in Frameworks */,
 				510C9EB116771845001CC09B /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +86,7 @@
 		510C9EAB16771845001CC09B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				510C9EDA167743D9001CC09B /* libsqlite3.0.dylib */,
 				510C9EAC16771845001CC09B /* UIKit.framework */,
 				510C9EAE16771845001CC09B /* Foundation.framework */,
 				510C9EB016771845001CC09B /* CoreGraphics.framework */,
@@ -88,6 +102,12 @@
 				510C9EC416771845001CC09B /* ViewController.h */,
 				510C9EC516771845001CC09B /* ViewController.m */,
 				510C9EC716771845001CC09B /* ViewController.xib */,
+				510C9ECF16771C45001CC09B /* EmployeeTableViewController.h */,
+				510C9ED016771C45001CC09B /* EmployeeTableViewController.m */,
+				510C9ED116771C45001CC09B /* EmployeeTableViewController.xib */,
+				510C9EDC16774B33001CC09B /* Employee.h */,
+				510C9EDD16774B33001CC09B /* Employee.m */,
+				510C9ED81677438B001CC09B /* Resources */,
 				510C9EB316771845001CC09B /* Supporting Files */,
 			);
 			path = "Location Remainder";
@@ -105,6 +125,14 @@
 				510C9EC216771845001CC09B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		510C9ED81677438B001CC09B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51894E9F167A0BE000C6F51B /* demodata.sqlite */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +191,8 @@
 				510C9EC116771845001CC09B /* Default@2x.png in Resources */,
 				510C9EC316771845001CC09B /* Default-568h@2x.png in Resources */,
 				510C9EC916771845001CC09B /* ViewController.xib in Resources */,
+				510C9ED316771C45001CC09B /* EmployeeTableViewController.xib in Resources */,
+				51894EA0167A0BE000C6F51B /* demodata.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +206,8 @@
 				510C9EB916771845001CC09B /* main.m in Sources */,
 				510C9EBD16771845001CC09B /* AppDelegate.m in Sources */,
 				510C9EC616771845001CC09B /* ViewController.m in Sources */,
+				510C9ED216771C45001CC09B /* EmployeeTableViewController.m in Sources */,
+				510C9EDE16774B33001CC09B /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +324,7 @@
 				510C9ECE16771845001CC09B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
