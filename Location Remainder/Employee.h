@@ -16,7 +16,7 @@
     NSString *designation;
     
 }
-
+//window change
 @property (nonatomic, readonly) NSInteger _id;
 @property (nonatomic, copy) NSString *empName;
 @property (nonatomic, copy) NSString *designation;
